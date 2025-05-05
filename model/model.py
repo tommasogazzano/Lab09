@@ -4,7 +4,7 @@ import networkx as nx
 class Model:
     def __init__(self):
         self._aeroporti = DAO.getAeroporti()
-        self._grafo = nx.Graph()
+        self._grafo = nx.DiGraph()
         self._idAeroporti = {}
         self._limite = 2000
         for a in self._aeroporti:
